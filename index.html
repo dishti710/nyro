@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NYRO Studio — Design That Hits Different</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-menu" id="closeMenu">✕</button>
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#work" onclick="toggleMenu()">Work</a>
+    <a href="#features" onclick="toggleMenu()">Services</a>
+    <a href="#testimonials" onclick="toggleMenu()">Testimonials</a>
+    <a href="#cta" onclick="toggleMenu()">Contact</a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">NYR<span class="dot-accent">·</span>O</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#features">Services</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeBtn" title="Toggle theme">☀️</button>
+      <button class="btn-nav">Let's Talk</button>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="hero-noise"></div>
+
+    <div class="hero-left">
+      <p class="hero-tag">Creative Design Studio · Est. 2019</p>
+      <h1 class="hero-headline">
+        We Make<br>
+        <span class="accent-coral">Brands</span><br>
+        <span class="outline">Unforgettable</span>
+      </h1>
+      <p class="hero-desc">NYRO is a full-spectrum creative studio crafting bold identities, digital experiences, and campaigns that don't just look good — they <em>mean</em> something.</p>
+      <div class="hero-cta-group">
+        <button class="btn-primary">See Our Work <span class="arrow">↗</span></button>
+        <button class="btn-outline">Learn More</button>
+      </div>
+    </div>
+
+    <!-- Hero Right: Mock Dashboard UI -->
+    <div class="hero-right">
+      <div class="hero-mockup-main">
+        <img src="hero.png" alt="Design dashboard" loading="lazy" style="width:100%;height:380px;object-fit:cover;display:block;"/>
+        <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(200,255,0,0.07),rgba(0,194,255,0.05));pointer-events:none;border-radius:20px;"></div>
+      </div>
+      <div class="hero-pill">✦ 120+ Brands Elevated</div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-item">Brand Identity <span class="marquee-dot"></span></div>
+      <div class="marquee-item">UI / UX Design <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Motion Graphics <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Web Development <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Print & Editorial <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Creative Direction <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Brand Identity <span class="marquee-dot"></span></div>
+      <div class="marquee-item">UI / UX Design <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Motion Graphics <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Web Development <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Print & Editorial <span class="marquee-dot"></span></div>
+      <div class="marquee-item">Creative Direction <span class="marquee-dot"></span></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section-label reveal">Who We Are</p>
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-img-stack">
+          <div class="about-img-main" style="overflow:hidden;">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&q=80&fit=crop" alt="Nyro Studio team at work" style="width:100%;height:320px;object-fit:cover;display:block;" loading="lazy"/>
+          </div>
+          <div class="about-img-accent" style="overflow:hidden;">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&q=80&fit=crop" alt="Design process" style="width:100%;height:130px;object-fit:cover;display:block;" loading="lazy"/>
+          </div>
+          <div class="about-badge">
+            <span>7+</span>Years of<br>Bold Design
+          </div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <h2 class="section-title">Design is<br>our <span style="color:var(--coral)">Language</span></h2>
+        <p style="margin-top:1.5rem;">At NYRO, we believe every brand has a story waiting to explode. We're not in the business of safe — we're in the business of <strong>remarkable</strong>.</p>
+        <p>From a two-person startup to an agency trusted by 120+ brands across 18 countries, we've grown by one principle: never make something boring.</p>
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-num">120<em>+</em></div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">340<em>+</em></div>
+            <div class="stat-label">Projects Done</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">18</div>
+            <div class="stat-label">Countries</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <div class="work-header reveal">
+      <div>
+        <p class="section-label">Selected Work</p>
+        <h2 class="section-title">Our Projects</h2>
+      </div>
+      <a href="#" class="work-link">View All Cases ↗</a>
+    </div>
+    <div class="work-grid">
+
+      <div class="work-card reveal">
+        <div class="work-card-arrow">↗</div>
+        <div class="work-card-img" style="position:relative;overflow:hidden;">
+          <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?w=800&q=80&fit=crop" alt="Velox Fintech Rebrand" style="width:100%;height:220px;object-fit:cover;display:block;transition:transform 0.5s;" loading="lazy"/>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,0.7) 0%,transparent 60%);pointer-events:none;"></div>
+          <div style="position:absolute;bottom:12px;left:14px;font-family:'Syne',sans-serif;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:#C8FF00;font-weight:700;opacity:0.85;">NYRO — IDENTITY</div>
+        </div>
+        <div class="work-card-body">
+          <p class="work-tag">Brand Identity · 2024</p>
+          <h3>Velox Fintech Rebrand</h3>
+          <p>Complete brand overhaul — logo, system, and launch campaign.</p>
+        </div>
+      </div>
+
+      <div class="work-card reveal">
+        <div class="work-card-arrow">↗</div>
+        <div class="work-card-img" style="position:relative;overflow:hidden;">
+          <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80&fit=crop" alt="Driftlab SaaS Platform" style="width:100%;height:220px;object-fit:cover;display:block;transition:transform 0.5s;" loading="lazy"/>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,0.7) 0%,transparent 60%);pointer-events:none;"></div>
+          <div style="position:absolute;bottom:12px;left:14px;font-family:'Syne',sans-serif;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:#00C2FF;font-weight:700;opacity:0.85;">NYRO — UI/UX</div>
+        </div>
+        <div class="work-card-body">
+          <p class="work-tag">Web Design · 2024</p>
+          <h3>Driftlab SaaS Platform</h3>
+          <p>Redesigned product UI and marketing site from scratch.</p>
+        </div>
+      </div>
+
+      <div class="work-card reveal">
+        <div class="work-card-arrow">↗</div>
+        <div class="work-card-img" style="position:relative;overflow:hidden;">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80&fit=crop" alt="Novu Health Launch" style="width:100%;height:220px;object-fit:cover;display:block;transition:transform 0.5s;" loading="lazy"/>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,0.7) 0%,transparent 50%);pointer-events:none;"></div>
+          <div style="position:absolute;bottom:12px;left:14px;font-family:'Syne',sans-serif;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:#FF4D4D;font-weight:700;opacity:0.9;">NYRO — CAMPAIGN</div>
+        </div>
+        <div class="work-card-body">
+          <p class="work-tag">Campaign Design · 2023</p>
+          <h3>Novu Health Launch</h3>
+          <p>Full campaign — posters, digital ads, and social content.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="features-header reveal">
+      <div>
+        <p class="section-label">What We Do</p>
+        <h2 class="section-title">Our Services</h2>
+        <p class="features-intro">We cover every dimension of your brand's visual presence — from first impression to lasting legacy.</p>
+      </div>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card c-lime reveal">
+        <div class="feature-num">01</div>
+        <div class="feature-icon ic-lime">🎨</div>
+        <h3>Brand Identity</h3>
+        <p>Logos, color systems, typography, and brand guidelines that make your identity unmistakable in any crowd.</p>
+      </div>
+      <div class="feature-card c-coral reveal">
+        <div class="feature-num">02</div>
+        <div class="feature-icon ic-coral">💻</div>
+        <h3>UI / UX Design</h3>
+        <p>User interfaces that are as beautiful as they are usable — designed with empathy, executed with precision.</p>
+      </div>
+      <div class="feature-card c-sky reveal">
+        <div class="feature-num">03</div>
+        <div class="feature-icon ic-sky">🎬</div>
+        <h3>Motion & Video</h3>
+        <p>Animation, explainer videos, and motion graphics that bring your brand to life in the scroll era.</p>
+      </div>
+      <div class="feature-card c-sky reveal">
+        <div class="feature-num">04</div>
+        <div class="feature-icon ic-sky">🌐</div>
+        <h3>Web Development</h3>
+        <p>Pixel-perfect, fast, and responsive websites built on modern tech. Beautiful code, beautiful result.</p>
+      </div>
+      <div class="feature-card c-lime reveal">
+        <div class="feature-num">05</div>
+        <div class="feature-icon ic-lime">📣</div>
+        <h3>Campaign Design</h3>
+        <p>Integrated creative campaigns across digital and print that turn heads and drive real results.</p>
+      </div>
+      <div class="feature-card c-coral reveal">
+        <div class="feature-num">06</div>
+        <div class="feature-icon ic-coral">✏️</div>
+        <h3>Creative Direction</h3>
+        <p>We lead the creative vision, aligning your team around a bold, unified story from day one.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="reveal">
+      <p class="section-label">Client Love</p>
+      <h2 class="section-title">Don't Take<br>Our Word.</h2>
+      <p class="testi-intro">Hear from founders and CMOs who trusted us with their most important asset — their brand.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="testi-star">★★★★★</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">NYRO didn't just redesign our brand — they rewired how we think about it. Our conversion rate jumped 40% in the first quarter after launch.</p>
+        <div class="testi-author">
+          <div class="testi-avatar av-1"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80&fit=crop&crop=face" alt="Ananya Sharma" style="width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;"/></div>
+          <div>
+            <div class="testi-name">Ananya Sharma</div>
+            <div class="testi-role">CEO, Velox Fintech</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-star">★★★★★</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Honestly, I was skeptical. Bold design isn't everyone's thing. But NYRO made us believers. Our product launch got featured in Forbes.</p>
+        <div class="testi-author">
+          <div class="testi-avatar av-2"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80&fit=crop&crop=face" alt="Rohan Kapoor" style="width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;"/></div>
+          <div>
+            <div class="testi-name">Rohan Kapoor</div>
+            <div class="testi-role">Co-Founder, Driftlab</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-star">★★★★★</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">They delivered in 3 weeks what I thought would take 3 months. Fast, communicative, and genuinely creative. 10/10 would hire again.</p>
+        <div class="testi-author">
+          <div class="testi-avatar av-3"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80&fit=crop&crop=face" alt="Priya Mehta" style="width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;"/></div>
+          <div>
+            <div class="testi-name">Priya Mehta</div>
+            <div class="testi-role">CMO, Novu Health</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="cta-text reveal">
+      <p class="section-label">Let's Build Together</p>
+      <h2 class="section-title">Ready to Go<br>Bold?</h2>
+      <p>Drop us a line. We reply within 24 hours — no fluff, just straight talk about your project.</p>
+    </div>
+    <button class="btn-dark reveal">Start a Project ↗</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo" style="color:#fff">NYR<span style="color:var(--coral)">·</span>O</a>
+        <p>Bold design for brands that refuse to be ordinary. Based in Bengaluru. Working everywhere.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Brand Identity</a></li>
+          <li><a href="#">UI / UX Design</a></li>
+          <li><a href="#">Motion & Video</a></li>
+          <li><a href="#">Web Dev</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">hello@nyro.studio</a></li>
+          <li><a href="#">+91 98765 43210</a></li>
+          <li><a href="#">Bengaluru, India</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 NYRO Studio. All rights reserved.</span>
+      <div class="footer-socials">
+        <a href="#" class="social-pill">𝕏</a>
+        <a href="#" class="social-pill">in</a>
+        <a href="#" class="social-pill">ig</a>
+        <a href="#" class="social-pill">be</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
